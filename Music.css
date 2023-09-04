@@ -1,0 +1,318 @@
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Times New Roman', Times, serif; 
+            scroll-behavior:smooth;
+        }
+        .div-one{
+            height:60px;
+            width:100%;
+            background-color: darkblue;
+            position:fixed;
+            z-index:10;
+            box-shadow:3px 3px 5px 1px white;
+            top:0px;
+        }
+        .div1-label1{
+            color:white;
+            font-size: 40px;
+            font-weight:bolder;
+            line-height:60px;
+            margin-left:60px;
+        }
+        .div1-label2{
+            color:white;
+            float:right;
+            margin-top:20px;
+            margin-right:5px;
+            font-size:25px;
+            display:none;
+        } 
+        .div1-label3{
+            color:white;
+            float:right;
+            margin-top:20px;
+            margin-right:5px;
+            font-size:25px;
+            display:none;
+        }
+        #check{
+            display:none;
+        }
+        #check:checked ~ .div1-ul{
+            display: block;  
+            top:60px;           
+            right:-70px;
+            transition:700ms;               
+        }     
+        #check:checked ~ .div1-label3{
+            display: block; 
+        }
+        #check:checked ~ .div1-label2{
+            display: none; 
+        }                                
+        .div1-ul{
+            float: right;
+        }
+        .div1-li{
+            display:inline-block;
+            line-height: 60px;
+            font-size: 20px;
+            font-weight: bolder;
+            margin-right:10px;
+        }
+        .div1-a{
+           text-decoration: none;
+           color:white;
+        }
+        .div1-a:hover{
+            background-color: crimson;
+        }
+        @media(max-width:683px){
+            .div1-li{
+            display:block;
+            background-color:black;
+            color:white;
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: center;
+            padding: 0px 10px; 
+        }
+        .div1-ul{ 
+            position: absolute; 
+            right:-200px;
+        }
+        .div1-label2{
+            display:block;
+        }
+        }
+        @media(max-width:610px){
+            body{
+                width:610px;
+            }
+        }
+        .div1-ul{
+            margin-right:60px;  
+        } 
+        .div1-li{
+            padding:0px 10px;
+            font-size:20px;
+        }  
+        /* DIV TWO */
+        .div-two{
+          margin-top: 60px;
+          height:1150px;
+          background-image:url("dj.jpg");
+          background-size:100% 100%;
+          background-repeat: no-repeat;
+        }
+        .div2-p1{
+          color:aliceblue;
+          text-align: center;
+          padding: 380px 0px 0px 0px;
+          font-size:140px;
+          font-weight:bolder;
+          filter: brightness(100%);
+        }
+        .div2-p2{
+          color:aliceblue;
+          text-align: center;
+          font-size:45px;
+          font-weight:bolder;
+          margin-top:50px;
+          margin-bottom:80px;
+        }
+        .div2-p3{
+          color:aliceblue;
+          text-align: center;
+          font-size:30px;
+        }
+        /* DIV THREE */
+        .div-three{
+          border:1px solid rgb(27, 9, 70);
+          height:max-content;
+          background-color: rgb(27, 9, 70);
+        }
+        .div3-p1{
+            color:white;  
+            font-size:40px;
+            text-align: center;
+            font-weight: bolder;
+            margin-top:60px;
+        }
+        .div3-p2{
+            color:white;
+            font-size:25px;
+            margin-top:60px;
+            text-align: center;
+            font-weight: bolder;
+            padding:0px 200px 0px 2 00px;
+        }
+        .div3-p3{
+            text-align: center;
+            margin-top:50px;
+        }
+        .div3-p3-a1{
+            color:white;
+            text-decoration:none;
+            background-color: rgb(197, 59, 8);
+            padding:10px;
+            font-size:20px;
+        }
+        .div3-p4{
+            color:white;
+            font-size:25px;
+            margin-top:50px;
+            text-align: center;
+            margin-bottom:550px;
+        }
+        /* DIV FOUR */
+        .div-four{
+          height:800px;
+          background-image:url("ipad.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-top:-400px;
+        }
+        /* DIV FIVE */
+        .div-five{
+           height:fit-content;
+        }
+        .div5-p1{
+            text-align: center;
+            font-size: 30px;
+            font-weight:bolder;
+            margin-top:100px;
+        }
+        .div5-p2{
+            text-align: center;
+            font-size: 22px;
+            font-weight:bolder;
+            margin-top:50px;
+            padding:0px 200px 0px 200px;
+        }
+        .div5-p3{
+            text-align: center;
+            margin-top:50px;
+            margin-bottom:50px;
+        }
+        .div5-p3-a{
+            text-decoration:none;
+            color:white;
+            font-size: 22px;
+            font-weight:bolder;
+            background-color: darkblue;
+            padding:10px;
+        }
+        /* DIV SIX */
+        .div-six{
+            height:800px;
+            background-image:url("MacBook.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        /* DIV SEVEN */
+        .div-seven{
+            margin-top:80px;
+            height:max-content;
+            scroll-margin:150px;
+        }
+        .div7-v1{
+          height:800px;
+          width:100%;
+        }
+        /* DIV EIGHT */
+        .div-eight{
+            margin-top:50px;
+            margin-left:5px;
+            height:max-content;
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .div8-child1{
+            background-image:url("gift_card.png");
+            height:400px;
+            width:700px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .div8-child2{
+           height:max-content;
+            width:800px;
+            margin-left: 100px;
+            margin-bottom: 20px;
+        } 
+        .div8-child2-p1{
+           font-size: 30px;
+           font-weight:bolder;
+        }
+        .div8-child2-p2{
+            margin-top:20px;
+            font-size: 25px;
+            font-family:Vrinda;
+           color:rgba(0, 0, 0, 0.884)
+        }
+        .div8-child2-p3{
+           margin-top:20px;
+           margin-left:10px;
+        }
+        .div8-child2-a{
+            text-decoration:none;
+            color:white;
+            font-size: 22px;
+            font-weight:bolder;
+            background-color: darkblue;
+            padding:10px;
+        }
+        /* DIV NINE */
+        .div-nine{
+          height: max-content;
+          background-color: rgb(2, 2, 82);
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+        .div9-child1{
+          height:max-content;
+          width:300px;
+        }
+        .div9-child2{
+          height:max-content;
+          width:300px;
+        }
+        .div9-child3{
+          height:max-content;
+          width:300px;
+        }
+        .div9-child4{
+          height:max-content;
+          width:300px;
+        }
+        .div9-p1{
+            color:rgba(255, 255, 255, 0.884);
+            font-size:25px;
+            text-decoration: underline;
+            font-weight: bolder;
+            text-align: center;
+            margin-bottom:25px;
+        }
+        .same{
+          color:white;
+          font-size:22px;
+          text-align: center;
+          margin-bottom:10px;
+        }
+        .div-ten{
+            height:50px;
+            background-color: rgb(1, 1, 26);
+        }
+        .div10-p1{
+            color:white;
+            font-size:25px;
+            text-align: center;
+            line-height: 50px;
+        }
